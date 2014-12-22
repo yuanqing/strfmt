@@ -1,7 +1,7 @@
 {
   "name": "strfmt",
   "main": "dist/strfmt.min.js",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "homepage": "https://github.com/yuanqing/strfmt",
   "authors": [
     "Lim Yuan Qing <hello@yuanqing.sg>"
