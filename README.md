@@ -50,12 +50,12 @@ Install via [bower](http://bower.io/):
 $ bower i --save yuanqing/strfmt
 ```
 
-To use strfmt in the browser, include [the minified script](https://github.com/yuanqing/strfmt/blob/master/strfmt.min.js) in your HTML:
+To use strfmt in the browser, include [the minified script](https://github.com/yuanqing/strfmt/blob/master/dist/strfmt.min.js) in your HTML:
 
 ```html
 <body>
   <!-- ... -->
-  <script src="path/to/strfmt.min.js"></script>
+  <script src="path/to/dist/strfmt.min.js"></script>
   <script>
     // strfmt available here
   </script>
