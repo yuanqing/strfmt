@@ -1,0 +1,41 @@
+{
+  "name": "strfmt",
+  "version": "0.0.0",
+  "description": "Named string interpolation, with format specifiers.",
+  "author": "Lim Yuan Qing",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yuanqing/strfmt.git"
+  },
+  "dependencies": {
+    "jaunt": "^1.1.3",
+    "sprintf-js": "^1.0.2"
+  },
+  "devDependencies": {
+    "browserify": "^7.0.3",
+    "istanbul": "^0.3.2",
+    "jshint": "^2.5.10",
+    "jshint-stylish": "^1.0.0",
+    "minijasminenode2": "^1.0.0",
+    "uglify-js": "^2.4.15"
+  },
+  "scripts": {
+    "lint": "node_modules/.bin/jshint --reporter=node_modules/jshint-stylish/stylish.js --verbose index.js test/*.spec.js",
+    "test": "rm -rf coverage && node_modules/.bin/istanbul cover -- node_modules/.bin/minijasminenode2 test/*.spec.js --verbose",
+    "dist": "rm -rf dist && mkdir dist && node_modules/.bin/browserify index.js --debug --outfile dist/strfmt.js --standalone foo && node_modules/.bin/uglifyjs dist/strfmt.js --output dist/strfmt.min.js",
+    "build": "npm run lint && npm test && npm run dist"
+  },
+  "keywords": [
+    "format",
+    "formatting",
+    "interpolate",
+    "interpolation",
+    "printf",
+    "sprintf",
+    "string",
+    "template",
+    "templating",
+    "vsprintf"
+  ]
+}
